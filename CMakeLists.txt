@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 4.1)
 project(Hermes)
 
-option(WS_BUILD_EXAMPLES "Build examples" ON)
+option(BUILD_EXAMPLES "Build examples" ON)
 
 if(POLICY CMP0167)
     cmake_policy(SET CMP0167 NEW)
@@ -35,6 +35,6 @@ target_include_directories(hermes PUBLIC
     ${Boost_INCLUDE_DIRS}
 )
 
-if (WS_BUILD_EXAMPLES)
+if (BUILD_EXAMPLES)
     add_subdirectory(examples)
 endif()
