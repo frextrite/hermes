@@ -1,0 +1,7 @@
+{
+  "name": "hermes",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  }
+}

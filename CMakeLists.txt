@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 4.1)
+cmake_minimum_required(VERSION 3.31)
 project(Hermes)
 
 option(BUILD_EXAMPLES "Build examples" ON)
@@ -7,7 +7,7 @@ if(POLICY CMP0167)
     cmake_policy(SET CMP0167 NEW)
 endif()
 
-find_package(Boost 1.89 REQUIRED)
+find_package(Boost 1.83 REQUIRED)
 find_package(OpenSSL REQUIRED)
 
 set(LIBRARY_SOURCES
